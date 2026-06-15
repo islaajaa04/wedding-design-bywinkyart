@@ -1,0 +1,417 @@
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+
+
+    .countdown{
+
+        display:flex;
+
+        flex-wrap:nowrap;
+
+        justify-content:center;
+
+        gap:8px;
+    }
+
+
+.box{
+width:70px;
+height:70px;
+}
+
+}
+
+@media (max-width:768px){
+
+    .bottom-nav{
+
+        width:calc(100% - 24px);
+
+        left:50%;
+
+        bottom:12px;
+
+        padding:0 12px;
+
+        border-radius:22px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .nav-item{
+
+        font-size:11px;
+    }
+
+    .nav-item i{
+
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:768px){
+
+.couple-wrapper{
+flex-direction:column;
+}
+
+.person img{
+width:180px;
+height:180px;
+}
+
+.event-card{
+width:100%;
+}
+
+.timeline-item{
+padding:20px;
+}
+
+}
+
+/* ===================================
+   COUNTDOWN MOBILE
+=================================== */
+
+@media(max-width:480px){
+
+    .countdown{
+
+        gap:8px;
+    }
+
+    .countdown-box{
+
+        width:72px;
+
+        height:85px;
+    }
+
+    .countdown-box span{
+
+        font-size:24px;
+    }
+
+}
+
+/* ===================================
+   GALLERY MOBILE
+=================================== */
+
+@media (max-width: 768px){
+
+    #galleryImage{
+
+        max-width:80%;
+
+        max-height:75vh;
+
+        border-radius:16px;
+    }
+
+    #prevGallery,
+    #nextGallery{
+
+        font-size:30px;
+
+        width:45px;
+
+        height:45px;
+
+        border-radius:50%;
+
+        background:
+        rgba(255,255,255,.15);
+
+        backdrop-filter:blur(8px);
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+    }
+
+    #prevGallery{
+
+        left:10px;
+    }
+
+    #nextGallery{
+
+        right:10px;
+    }
+
+    #closeGallery{
+
+        top:15px;
+
+        right:15px;
+
+        font-size:28px;
+
+        width:40px;
+
+        height:40px;
+
+        border-radius:50%;
+
+        background:
+        rgba(255,255,255,.15);
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #galleryImage{
+
+        max-width:70vw;
+        max-height:70vh;
+    }
+
+    #prevGallery,
+    #nextGallery{
+
+        width:42px;
+        height:42px;
+
+        font-size:20px;
+    }
+
+    #prevGallery{
+
+        left:8px;
+    }
+
+    #nextGallery{
+
+        right:8px;
+    }
+
+    #closeGallery{
+
+        top:15px;
+        right:15px;
+
+        width:42px;
+        height:42px;
+
+        font-size:22px;
+
+        border-radius:50%;
+
+        background:
+        rgba(255,255,255,.15);
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+}
+
+/* ===================================
+   STORY MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .story-title{
+
+        font-size:34px;
+    }
+
+    .story-item{
+
+        padding-left:70px;
+    }
+
+    .story-dot{
+
+        width:48px;
+        height:48px;
+    }
+
+    .story-card{
+
+        padding:20px;
+    }
+
+    .story-card h3{
+
+        font-size:22px;
+    }
+
+    .story-card p{
+
+        font-size:14px;
+    }
+
+}
+
+/* ===================================
+   LOCATION POPUP MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .location-content{
+
+        width:90%;
+
+        padding:18px;
+    }
+
+    .location-content h2{
+
+        font-size:22px;
+    }
+
+    #locationMap{
+
+    height:280px;
+
+    border-radius:14px;
+}
+
+    #locationLink{
+
+        width:100%;
+
+        text-align:center;
+    }
+
+    #closeLocation{
+
+        top:15px;
+
+        right:15px;
+
+        width:42px;
+
+        height:42px;
+
+        font-size:22px;
+    }
+
+}
+
+/* ===================================
+   DIGITAL GIFT MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .gift-title{
+
+        font-size:34px;
+    }
+
+    .gift-card{
+
+        padding:22px;
+    }
+
+    .gift-icon{
+
+        font-size:50px;
+    }
+
+    .bank-card strong{
+
+        font-size:20px;
+    }
+
+}
+
+/* ===================================
+   RSVP MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .rsvp-title{
+
+        font-size:34px;
+    }
+
+    .attendance-stats span{
+
+        font-size:24px;
+    }
+
+}
+
+/* ===================================
+   THANK YOU MOBILE
+=================================== */
+
+@media(max-width:768px){
+
+    .thankyou-title{
+
+        font-size:36px;
+    }
+
+    .thankyou-text{
+
+        font-size:14px;
+
+        line-height:1.9;
+    }
+
+    .thankyou-prayer{
+
+        font-size:14px;
+
+        line-height:1.9;
+    }
+
+    .thankyou-couple{
+
+        font-size:52px;
+    }
+
+}
+
+/* EXTRA SMALL */
+
+@media(max-width:480px){
+
+    .thankyou-couple{
+
+        font-size:46px;
+    }
+
+}
+
+@media(max-width:480px){
+
+.delete-box{
+
+width:95%;
+
+padding:20px;
+}
+
+.delete-action{
+
+flex-direction:column;
+}
+
+}
