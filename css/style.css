@@ -74,13 +74,51 @@ body {
 
   font-size: 50px;
 
-  font-weight: 400;
+  font-weight: 200;
 
   color: white;
 
   margin-bottom: 20px;
 
   text-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   OPENING SUBTITLE
+========================= */
+
+.opening-subtitle{
+
+font-size:16px;
+
+letter-spacing:4px;
+
+margin-bottom:10px;
+
+opacity:.9;
+
+}
+
+/* =========================
+   OPENING MESSAGE
+========================= */
+
+.opening-message{
+
+margin-top:25px;
+
+font-size:14px;
+
+line-height:1.9;
+
+max-width:320px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+color:rgba(255,255,255,.9);
+
 }
 
 .opening-overlay {
@@ -139,7 +177,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  padding-bottom: 120px;
+ padding-bottom:100px;
 
   color: white;
 }
@@ -151,7 +189,7 @@ body {
 .hero-overlay {
   width: 100%;
 
-  padding: 20px;
+  padding: 50px;
 
   text-align: center;
 }
@@ -169,9 +207,9 @@ body {
 .hero-title {
   font-family: "Great Vibes", cursive;
 
-  font-size: 72px;
+  font-size: 50px;
 
-  font-weight: 400;
+  font-weight: 600;
 
   margin-bottom: 15px;
 
@@ -179,9 +217,9 @@ body {
 }
 
 .hero-date {
-  font-size: 24px;
+  font-size: 20px;
 
-  font-weight: 600;
+  font-weight: 100;
 
   margin-bottom: 25px;
 }
@@ -211,7 +249,7 @@ body {
 =================================== */
 
 .save-date-section {
-  padding: 40px 20px 30px;
+  padding: 40px 20px 60px;
 
   text-align: center;
 }
@@ -611,24 +649,48 @@ body {
   font-weight: 600;
 }
 
-.event-map-btn {
-  display: inline-block;
+.event-map-btn{
 
-  padding: 12px 26px;
+display:inline-flex;
 
-  border-radius: 999px;
+justify-content:center;
 
-  text-decoration: none;
+align-items:center;
 
-  background: #7f1d1d;
+width:220px;
 
-  color: white;
+height:50px;
 
-  transition: 0.3s;
+border:none;
+
+border-radius:999px;
+
+background:#7f1d1d;
+
+color:white;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:
+
+0 8px 20px
+
+rgba(127,29,29,.25);
+
 }
 
-.event-map-btn:hover {
-  transform: translateY(-3px);
+.event-map-btn:hover{
+
+transform:
+
+translateY(-4px);
+
 }
 
 /* ===================================
@@ -1162,20 +1224,36 @@ body {
 
 /* CONTENT */
 
-#giftContent {
-  max-height: 0;
+#giftContent{
 
-  overflow: hidden;
+max-height:0;
 
-  transition: max-height 0.6s ease;
+opacity:0;
 
-  margin-top: 0;
+overflow:hidden;
+
+transform:
+
+translateY(-15px);
+
+transition:
+
+all .6s ease;
+
 }
 
-#giftContent.show {
-  max-height: 1000px;
+#giftContent.show{
 
-  margin-top: 20px;
+max-height:1000px;
+
+opacity:1;
+
+transform:
+
+translateY(0);
+
+margin-top:20px;
+
 }
 
 /* BANK */
@@ -1600,16 +1678,24 @@ body {
    COPYRIGHT
 =================================== */
 
-.copyright {
-  text-align: center;
+.copyright{
 
-  padding: 15px 10px 120px;
+padding:
 
-  font-size: 12px;
+10px
 
-  color: rgba(255, 255, 255, 0.55);
+10px
 
-  letter-spacing: 1px;
+20px;
+
+text-align: center;
+
+font-size:12px;
+
+color:
+
+rgba(255,255,255,.55);
+
 }
 
 .mobile-frame {
@@ -1837,4 +1923,36 @@ body {
 
 body {
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal{
+
+opacity:0;
+
+transform:
+
+translateY(50px)
+
+scale(.92);
+
+transition:
+
+all .9s ease;
+
+}
+
+.reveal.show{
+
+opacity:1;
+
+transform:
+
+translateY(0)
+
+scale(1);
+
 }

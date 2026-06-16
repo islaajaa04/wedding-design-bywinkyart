@@ -415,3 +415,63 @@ flex-direction:column;
 }
 
 }
+
+/* =========================
+   HERO MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.hero-title{
+
+font-size:100px;
+
+}
+
+.hero-date{
+
+font-size:18px;
+
+margin-bottom:20px;
+
+}
+
+.hero-quote{
+
+font-size:15px;
+
+line-height:2;
+
+}
+
+.hero-source{
+
+margin-bottom:50px;
+
+}
+
+}
+
+/* =========================
+   OPENING MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.opening-title{
+
+font-size:50px;
+
+}
+
+.opening-message{
+
+font-size:13px;
+
+line-height:1.8;
+
+max-width:280px;
+
+}
+
+}
