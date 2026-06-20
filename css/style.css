@@ -185,7 +185,7 @@ body {
 .hero-overlay {
   width: 100%;
 
-  padding: 50px;
+  padding: 60px 25px 40px;
 
   text-align: center;
 }
@@ -203,9 +203,9 @@ body {
 .hero-title {
   font-family: "Great Vibes", cursive;
 
-  font-size: 50px;
+  font-size: 72px;
 
-  font-weight: 600;
+  font-weight: 400;
 
   margin-bottom: 15px;
 
@@ -217,6 +217,8 @@ body {
 
   font-weight: 100;
 
+  font-family: "Cormorant Garamond", serif;
+
   margin-bottom: 25px;
 }
 
@@ -225,7 +227,9 @@ body {
 
   margin: auto;
 
-  font-size: 15px;
+  font-size: 12px;
+
+  font-family: "Cormorant Garamond", serif;
 
   line-height: 1.8;
 
@@ -235,7 +239,7 @@ body {
 .hero-source {
   margin-top: 12px;
 
-  font-size: 14px;
+  font-size: 10px;
 
   opacity: 0.8;
 }
