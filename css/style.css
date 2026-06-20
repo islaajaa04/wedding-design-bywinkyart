@@ -179,6 +179,28 @@ body {
 }
 
 /* ===================================
+   HERO SECTION
+=================================== */
+
+.hero {
+  height: 100vh;
+
+  position: relative;
+
+  background: url("../assets/images/cover.jpg") center center/cover;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  padding-bottom: 100px;
+
+  color: white;
+}
+
+/* ===================================
    HERO CONTENT
 =================================== */
 
@@ -190,15 +212,25 @@ body {
   text-align: center;
 }
 
+/* ===================================
+   HERO SUBTITLE
+=================================== */
+
 .hero-subtitle {
-  font-size: 14px;
+  font-family: "Cormorant Garamond", serif;
 
-  letter-spacing: 2px;
+  font-size: 22px;
 
-  margin-bottom: 10px;
+  font-weight: 500;
 
-  opacity: 0.8;
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
 }
+
+/* ===================================
+   HERO TITLE
+=================================== */
 
 .hero-title {
   font-family: "Great Vibes", cursive;
@@ -207,41 +239,57 @@ body {
 
   font-weight: 400;
 
-  margin-bottom: 15px;
+  line-height: 1.1;
 
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 22px;
+
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
+
+/* ===================================
+   HERO DATE
+=================================== */
 
 .hero-date {
-  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 
-  font-weight: 100;
+  font-size: 24px;
 
-  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
 
-  margin-bottom: 25px;
+  margin-bottom: 55px;
 }
 
+/* ===================================
+   HERO QUOTE
+=================================== */
+
 .hero-quote {
-  max-width: 320px;
+  max-width: 650px;
 
-  margin: auto;
-
-  font-size: 12px;
+  margin: 0 auto;
 
   font-family: "Cormorant Garamond", serif;
+
+  font-size: 24px;
 
   line-height: 1.8;
 
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+
+  color: rgba(255, 255, 255, 0.95);
 }
 
+/* ===================================
+   HERO SOURCE
+=================================== */
+
 .hero-source {
-  margin-top: 12px;
+  font-family: "Cormorant Garamond", serif;
 
-  font-size: 10px;
+  font-size: 24px;
 
-  opacity: 0.8;
+  font-weight: 500;
 }
 
 /* ===================================

@@ -1,1119 +1,728 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <title>The Wedding Of Mila & Rizky</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
 
-<title>The Wedding Of Mila & Rizky</title>
+    <meta property="og:title" content="The Wedding Of Mila & Bastian" />
 
-<meta property="og:type" content="website">
+    <meta
+      property="og:description"
+      content="Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami pada 29 Desember 2026."
+    />
 
-<meta property="og:title"
-content="The Wedding Of Mila & Bastian">
+    <meta
+      property="og:url"
+      content="https://islaajaa04.github.io/wedding-design-bywinkyart/"
+    />
 
-<meta property="og:description"
-content="Kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami pada 29 Desember 2026.">
+    <meta
+      property="og:image"
+      content="https://islaajaa04.github.io/wedding-design-bywinkyart/assets/images/og-preview.jpg"
+    />
 
-<meta property="og:url"
-content="https://islaajaa04.github.io/wedding-design-bywinkyart/">
+    <meta property="og:image:type" content="image/jpeg" />
 
-<meta property="og:image"
-content="https://islaajaa04.github.io/wedding-design-bywinkyart/assets/images/og-preview.jpg">
+    <meta property="og:image:width" content="1200" />
 
-<meta property="og:image:type"
-content="image/jpeg">
+    <meta property="og:image:height" content="630" />
 
-<meta property="og:image:width"
-content="1200">
+    <meta property="og:site_name" content="Winky Art Wedding Invitation" />
 
-<meta property="og:image:height"
-content="630">
+    <meta property="og:locale" content="id_ID" />
 
-<meta property="og:site_name"
-content="Winky Art Wedding Invitation">
+    <meta name="twitter:card" content="summary_large_image" />
 
-<meta property="og:locale"
-content="id_ID">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
 
-<meta name="twitter:card"
-content="summary_large_image">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/mobile.css">
+  <body>
+    <div class="background-layer"></div>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <button id="autoScrollBtn">Auto Scroll : OFF</button>
 
-</head>
+    <button id="musicBtn">
+      <i class="fa-solid fa-play"></i>
+    </button>
 
-<body>
+    <div class="mobile-frame">
+      <div class="scroll-content">
+        <nav class="bottom-nav">
+          <a href="#hero" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
 
-<div class="background-layer"></div>
+            <span>Home</span>
+          </a>
 
-<button id="autoScrollBtn">
-    Auto Scroll : OFF
-</button>
+          <a href="#couple" class="nav-item">
+            <i class="fa-solid fa-heart"></i>
 
-<button id="musicBtn">
-    <i class="fa-solid fa-play"></i>
-</button>
+            <span>Couple</span>
+          </a>
 
-<div class="mobile-frame">
+          <a href="#event" class="nav-item">
+            <i class="fa-solid fa-calendar"></i>
 
-    <div class="scroll-content">
+            <span>Event</span>
+          </a>
 
-       <nav class="bottom-nav">
+          <a href="#moment" class="nav-item">
+            <i class="fa-solid fa-images"></i>
 
-<a href="#hero" class="nav-item active">
+            <span>Moment</span>
+          </a>
 
-<i class="fa-solid fa-house"></i>
+          <a href="#story" class="nav-item">
+            <i class="fa-solid fa-book"></i>
 
-<span>Home</span>
+            <span>Story</span>
+          </a>
+        </nav>
 
-</a>
+        <!-- OPENING -->
+        <section id="opening">
+          <div class="opening-bg"></div>
 
-<a href="#couple" class="nav-item">
+          <div class="opening-cover">
+            <div class="opening-overlay">
+              <!-- JUDUL -->
 
-<i class="fa-solid fa-heart"></i>
+              <p class="opening-subtitle">The Wedding Of</p>
 
-<span>Couple</span>
+              <!-- NAMA MEMPELAI -->
 
-</a>
+              <h2 class="opening-title">Mila & Bastian</h2>
 
-<a href="#event" class="nav-item">
+              <p>Kepada Yth.</p>
 
-<i class="fa-solid fa-calendar"></i>
+              <h3 id="guestName">Tamu Undangan</h3>
 
-<span>Event</span>
+              <button id="openInvitation">Buka Undangan</button>
 
-</a>
+              <!-- KATA SAMBUTAN -->
 
-<a href="#moment" class="nav-item">
+              <p class="opening-message">
+                Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
+                mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan
+                kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami.
+              </p>
+            </div>
+          </div>
+        </section>
 
-<i class="fa-solid fa-images"></i>
+        <!-- AUDIO -->
 
-<span>Moment</span>
+        <audio id="music" loop preload="auto">
+          <source src="assets/audio/backsound.mp3" type="audio/mpeg" />
 
-</a>
+          Browser Anda tidak mendukung audio.
+        </audio>
 
-<a href="#story" class="nav-item">
-
-<i class="fa-solid fa-book"></i>
-
-<span>Story</span>
-
-</a>
-
-
-</nav>
-
-<!-- OPENING -->
-<section id="opening">
-
-    <div class="opening-bg"></div>
-
-    <div class="opening-cover">
-
-        <div class="opening-overlay">
-
-            <!-- JUDUL -->
-
-<p class="opening-subtitle">
-
-The Wedding Of
-
-</p>
-
-<!-- NAMA MEMPELAI -->
-
-<h2 class="opening-title">
-
-Mila & Bastian
-
-</h2>
-
-            <p>Kepada Yth.</p>
-
-            <h3 id="guestName">
-                Tamu Undangan
-            </h3>
-
-            <button id="openInvitation">
-                Buka Undangan
-            </button>
-
-            <!-- KATA SAMBUTAN -->
-
-<p class="opening-message">
-
-Dengan memohon rahmat dan ridho Allah SWT,
-
-kami bermaksud mengundang
-
-Bapak/Ibu/Saudara/i
-
-untuk menghadiri acara pernikahan kami.
-
-Merupakan suatu kehormatan
-
-dan kebahagiaan bagi kami.
-
-</p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- AUDIO -->
-
-<audio id="music" loop preload="auto">
-
-<source
-src="assets/audio/backsound.mp3"
-type="audio/mpeg">
-
-Browser Anda tidak mendukung audio.
-
-</audio>
-
-
-
-<!-- ===================================
+        <!-- ===================================
      HERO SECTION
 =================================== -->
 
-<section class="hero" id="hero">
+        <section class="hero" id="hero">
+          <div class="hero-overlay">
+            <p class="hero-subtitle">The Wedding Of</p>
 
-    <div class="hero-overlay">
+            <h1 class="hero-title">Mila & Bastian</h1>
 
-        <p class="hero-subtitle">
-            The Wedding Of
-        </p>
+            <div class="hero-date">29 Desember 2026</div>
 
-        <h1 class="hero-title">
-            Mila & Bastian
-        </h1>
+            <div class="hero-quote">
+              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram
+              kepadanya."
+            </div>
 
-        <div class="hero-date">
-            29 Desember 2026
-        </div>
+            <div class="hero-source">— QS. Ar-Rum : 21</div>
+          </div>
+        </section>
 
-        <div class="hero-quote">
-
-            "Dan di antara tanda-tanda (kebesaran)-Nya
-            ialah Dia menciptakan pasangan untukmu
-            dari jenismu sendiri agar kamu merasa
-            tenteram kepadanya."
-
-        </div>
-
-        <div class="hero-source">
-            — QS. Ar-Rum : 21
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      SAVE THE DATE
 =================================== -->
 
-<section class="save-date-section">
-
-    <!-- =========================
+        <section class="save-date-section">
+          <!-- =========================
          TITLE
     ========================= -->
 
-    <h2 class="save-date-title">
-        Save The Date
-    </h2>
+          <h2 class="save-date-title">Save The Date</h2>
 
-    <!-- =========================
+          <!-- =========================
          DATE
     ========================= -->
 
-    <p class="save-date-date">
-        29 Desember 2026
-    </p>
+          <p class="save-date-date">29 Desember 2026</p>
 
-    <!-- =========================
+          <!-- =========================
          COUNTDOWN
     ========================= -->
 
-    <div class="countdown">
+          <div class="countdown">
+            <div class="countdown-box">
+              <span id="days">0</span>
 
-        <div class="countdown-box">
+              <small>Hari</small>
+            </div>
 
-            <span id="days">0</span>
+            <div class="countdown-box">
+              <span id="hours">0</span>
 
-            <small>Hari</small>
+              <small>Jam</small>
+            </div>
 
-        </div>
+            <div class="countdown-box">
+              <span id="minutes">0</span>
 
-        <div class="countdown-box">
+              <small>Menit</small>
+            </div>
 
-            <span id="hours">0</span>
+            <div class="countdown-box">
+              <span id="seconds">0</span>
 
-            <small>Jam</small>
+              <small>Detik</small>
+            </div>
+          </div>
+        </section>
 
-        </div>
-
-        <div class="countdown-box">
-
-            <span id="minutes">0</span>
-
-            <small>Menit</small>
-
-        </div>
-
-        <div class="countdown-box">
-
-            <span id="seconds">0</span>
-
-            <small>Detik</small>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      COUPLE SECTION
 =================================== -->
 
-<section id="couple">
-
-    <!-- ==========================
+        <section id="couple">
+          <!-- ==========================
          MEMPELAI WANITA
     =========================== -->
 
-    <div class="couple-card">
+          <div class="couple-card">
+            <div class="couple-slider bride-slider">
+              <img src="assets/images/mempelai_1.jpg" class="slide active" />
 
-        <div class="couple-slider bride-slider">
+              <img src="assets/images/mempelai_2.jpg" class="slide" />
+            </div>
 
-            <img
-            src="assets/images/mempelai_1.jpg"
-            class="slide active">
+            <div class="couple-info">
+              <h2>Mila Putri</h2>
 
-            <img
-            src="assets/images/mempelai_2.jpg"
-            class="slide">
+              <p>Putri dari Bapak Ahmad dan Ibu Nurhayati</p>
 
-        </div>
-
-        <div class="couple-info">
-
-            <h2>
-                Mila Putri
-            </h2>
-
-            <p>
-                Putri dari Bapak Ahmad
-                dan Ibu Nurhayati
-            </p>
-
-            <a
-            href="https://instagram.com/mila"
-            target="_blank"
-            class="instagram-btn">
-
+              <a
+                href="https://instagram.com/mila"
+                target="_blank"
+                class="instagram-btn"
+              >
                 <i class="fa-brands fa-instagram"></i>
 
                 Instagram
+              </a>
+            </div>
+          </div>
 
-            </a>
-
-        </div>
-
-    </div>
-
-    <!-- ==========================
+          <!-- ==========================
          MEMPELAI PRIA
     =========================== -->
 
-    <div class="couple-card">
+          <div class="couple-card">
+            <div class="couple-slider groom-slider">
+              <img src="assets/images/mempelai_1.jpg" class="slide active" />
 
-        <div class="couple-slider groom-slider">
+              <img src="assets/images/mempelai_2.jpg" class="slide" />
+            </div>
 
-            <img
-            src="assets/images/mempelai_1.jpg"
-            class="slide active">
+            <div class="couple-info">
+              <h2>Rizky Saputra</h2>
 
-            <img
-            src="assets/images/mempelai_2.jpg"
-            class="slide">
+              <p>Putra dari Bapak Suryanto dan Ibu Fatimah</p>
 
-        </div>
-
-        <div class="couple-info">
-
-            <h2>
-                Rizky Saputra
-            </h2>
-
-            <p>
-                Putra dari Bapak Suryanto
-                dan Ibu Fatimah
-            </p>
-
-            <a
-            href="https://instagram.com/rizky"
-            target="_blank"
-            class="instagram-btn">
-
+              <a
+                href="https://instagram.com/rizky"
+                target="_blank"
+                class="instagram-btn"
+              >
                 <i class="fa-brands fa-instagram"></i>
 
                 Instagram
+              </a>
+            </div>
+          </div>
+        </section>
 
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      EVENT SECTION
 =================================== -->
 
-<section id="event">
+        <section id="event">
+          <h2 class="event-title">Wedding Event</h2>
 
-    <h2 class="event-title">
-        Wedding Event
-    </h2>
-
-    <!-- ==========================
+          <!-- ==========================
          AKAD NIKAH
     =========================== -->
 
-    <div class="event-wrapper">
+          <div class="event-wrapper">
+            <div class="event-photo">
+              <img src="assets/images/akad.jpg" alt="Akad Nikah" />
+            </div>
 
-        <div class="event-photo">
+            <div class="event-info">
+              <h3>Akad Nikah</h3>
 
-            <img
-            src="assets/images/akad.jpg"
-            alt="Akad Nikah">
-
-        </div>
-
-        <div class="event-info">
-
-            <h3>
-                Akad Nikah
-            </h3>
-
-            <div class="event-date-box">
-
-                <div class="date-number">
-                    21
-                </div>
+              <div class="event-date-box">
+                <div class="date-number">21</div>
 
                 <div class="date-detail">
+                  <span> Desember </span>
 
-                    <span>
-                        Desember
-                    </span>
-
-                    <small>
-                        2026
-                    </small>
-
+                  <small> 2026 </small>
                 </div>
+              </div>
 
-            </div>
+              <p class="event-time">08.00 WIB - Selesai</p>
 
-            <p class="event-time">
-                08.00 WIB - Selesai
-            </p>
+              <p class="event-address">Jl. Mawar No. 123 Jakarta Selatan</p>
 
-            <p class="event-address">
+              <!-- STATUS DINAMIS -->
 
-                Jl. Mawar No. 123
-                Jakarta Selatan
-
-            </p>
-
-            <!-- STATUS DINAMIS -->
-
-            <div
-            class="event-status"
-            data-event-date="2026-12-21T08:00:00">
-
+              <div class="event-status" data-event-date="2026-12-21T08:00:00">
                 Status :
 
-                <span>
-                    Belum Dimulai
-                </span>
+                <span> Belum Dimulai </span>
+              </div>
 
+              <button
+                class="event-map-btn open-location"
+                data-title="Lokasi Akad Nikah"
+                data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3920163214134!2d99.60853237348908!3d2.988562654121902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30324bc26dc8b365%3A0xcc894b1e7937b2ab!2sMasjid%20Agung%20H.%20Achmad%20Bakrie%20Kisaran!5e0!3m2!1sid!2sid!4v1781364423503!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                data-link="https://maps.app.goo.gl/4TJfnjsnq1U4RFLD7"
+              >
+                Detail Lokasi
+              </button>
             </div>
+          </div>
 
-            <button
-class="event-map-btn open-location"
-data-title="Lokasi Akad Nikah"
-data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3920163214134!2d99.60853237348908!3d2.988562654121902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30324bc26dc8b365%3A0xcc894b1e7937b2ab!2sMasjid%20Agung%20H.%20Achmad%20Bakrie%20Kisaran!5e0!3m2!1sid!2sid!4v1781364423503!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-data-link="https://maps.app.goo.gl/4TJfnjsnq1U4RFLD7">
-
-Detail Lokasi
-
-</button>
-
-        </div>
-
-    </div>
-
-    <!-- ==========================
+          <!-- ==========================
          RESEPSI
     =========================== -->
 
-    <div class="event-wrapper">
+          <div class="event-wrapper">
+            <div class="event-photo">
+              <img src="assets/images/resepsi.jpg" alt="Resepsi" />
+            </div>
 
-        <div class="event-photo">
+            <div class="event-info">
+              <h3>Resepsi</h3>
 
-            <img
-            src="assets/images/resepsi.jpg"
-            alt="Resepsi">
-
-        </div>
-
-        <div class="event-info">
-
-            <h3>
-                Resepsi
-            </h3>
-
-            <div class="event-date-box">
-
-                <div class="date-number">
-                    21
-                </div>
+              <div class="event-date-box">
+                <div class="date-number">21</div>
 
                 <div class="date-detail">
+                  <span> Desember </span>
 
-                    <span>
-                        Desember
-                    </span>
-
-                    <small>
-                        2026
-                    </small>
-
+                  <small> 2026 </small>
                 </div>
+              </div>
 
-            </div>
+              <p class="event-time">11.00 WIB - Selesai</p>
 
-            <p class="event-time">
-                11.00 WIB - Selesai
-            </p>
+              <p class="event-address">Jl. Mawar No. 123 Jakarta Selatan</p>
 
-            <p class="event-address">
-
-                Jl. Mawar No. 123
-                Jakarta Selatan
-
-            </p>
-
-            <div
-            class="event-status"
-            data-event-date="2026-12-21T11:00:00">
-
+              <div class="event-status" data-event-date="2026-12-21T11:00:00">
                 Status :
 
-                <span>
-                    Belum Dimulai
-                </span>
+                <span> Belum Dimulai </span>
+              </div>
 
+              <button
+                class="event-map-btn open-location"
+                data-title="Lokasi Resepsi"
+                data-map="https://maps.google.com/maps?q=Bundaran%20HI&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                data-link="https://maps.google.com/?q=Bundaran+HI"
+              >
+                Detail Lokasi
+              </button>
             </div>
+          </div>
+        </section>
 
-            <button
-class="event-map-btn open-location"
-data-title="Lokasi Resepsi"
-data-map="https://maps.google.com/maps?q=Bundaran%20HI&t=&z=15&ie=UTF8&iwloc=&output=embed"
-data-link="https://maps.google.com/?q=Bundaran+HI">
-
-Detail Lokasi
-
-</button>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      BEST MOMENT
 =================================== -->
 
-<section id="moment">
+        <section id="moment">
+          <h2 class="moment-title">Best Moment</h2>
 
-    <h2 class="moment-title">
-        Best Moment
-    </h2>
+          <div class="moment-grid">
+            <img src="assets/images/foto1.jpg" class="moment-img" />
+            <img src="assets/images/foto2.jpg" class="moment-img" />
 
-    <div class="moment-grid">
+            <img src="assets/images/foto3.jpg" class="moment-img" />
+            <img src="assets/images/foto4.jpg" class="moment-img" />
 
-        <img src="assets/images/foto1.jpg" class="moment-img">
-        <img src="assets/images/foto2.jpg" class="moment-img">
+            <img src="assets/images/foto5.jpg" class="moment-img" />
+            <img src="assets/images/foto6.jpg" class="moment-img" />
 
-        <img src="assets/images/foto3.jpg" class="moment-img">
-        <img src="assets/images/foto4.jpg" class="moment-img">
+            <img src="assets/images/foto7.jpg" class="moment-img" />
+            <img src="assets/images/foto8.jpg" class="moment-img" />
+          </div>
+        </section>
 
-        <img src="assets/images/foto5.jpg" class="moment-img">
-        <img src="assets/images/foto6.jpg" class="moment-img">
-
-        <img src="assets/images/foto7.jpg" class="moment-img">
-        <img src="assets/images/foto8.jpg" class="moment-img">
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      LOVE STORY TIMELINE
 =================================== -->
 
-<section id="story">
+        <section id="story">
+          <h2 class="story-title">Our Love Story</h2>
 
-    <h2 class="story-title">
-        Our Love Story
-    </h2>
+          <div class="story-timeline">
+            <!-- ITEM 1 -->
 
-    <div class="story-timeline">
-
-        <!-- ITEM 1 -->
-
-        <div class="story-item" >
-
-            <div class="story-dot">
+            <div class="story-item">
+              <div class="story-dot">
                 <i class="fa-solid fa-heart"></i>
-            </div>
+              </div>
 
-            <div class="story-card">
+              <div class="story-card">
+                <span class="story-year"> 2020 </span>
 
-                <span class="story-year">
-                    2020
-                </span>
-
-                <h3>
-                    Awal Pertemuan
-                </h3>
+                <h3>Awal Pertemuan</h3>
 
                 <p>
-                    Kami pertama kali bertemu saat kuliah.
-                    Dari pertemuan sederhana itulah
-                    cerita ini dimulai.
+                  Kami pertama kali bertemu saat kuliah. Dari pertemuan
+                  sederhana itulah cerita ini dimulai.
                 </p>
-
+              </div>
             </div>
 
-        </div>
+            <!-- ITEM 2 -->
 
-        <!-- ITEM 2 -->
-
-        <div class="story-item" >
-
-            <div class="story-dot">
+            <div class="story-item">
+              <div class="story-dot">
                 <i class="fa-solid fa-ring"></i>
-            </div>
+              </div>
 
-            <div class="story-card">
+              <div class="story-card">
+                <span class="story-year"> 2025 </span>
 
-                <span class="story-year">
-                    2025
-                </span>
-
-                <h3>
-                    Lamaran
-                </h3>
+                <h3>Lamaran</h3>
 
                 <p>
-                    Setelah perjalanan panjang,
-                    kami memutuskan melangkah
-                    ke jenjang yang lebih serius.
+                  Setelah perjalanan panjang, kami memutuskan melangkah ke
+                  jenjang yang lebih serius.
                 </p>
-
+              </div>
             </div>
 
-        </div>
+            <!-- ITEM 3 -->
 
-        <!-- ITEM 3 -->
-
-        <div class="story-item" >
-
-            <div class="story-dot">
+            <div class="story-item">
+              <div class="story-dot">
                 <i class="fa-solid fa-heart-circle-check"></i>
-            </div>
+              </div>
 
-            <div class="story-card">
+              <div class="story-card">
+                <span class="story-year"> 2026 </span>
 
-                <span class="story-year">
-                    2026
-                </span>
-
-                <h3>
-                    Pernikahan
-                </h3>
+                <h3>Pernikahan</h3>
 
                 <p>
-                    InsyaAllah kami akan
-                    mengikat janji suci
-                    dalam pernikahan.
+                  InsyaAllah kami akan mengikat janji suci dalam pernikahan.
                 </p>
-
+              </div>
             </div>
+          </div>
+        </section>
 
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      DIGITAL GIFT
 =================================== -->
 
-<section id="gift">
+        <section id="gift">
+          <h2 class="gift-title">Amplop Digital</h2>
 
-    <h2 class="gift-title">
-        Amplop Digital
-    </h2>
+          <div class="gift-card">
+            <!-- ICON -->
 
-    <div class="gift-card">
+            <div class="gift-icon">
+              <i class="fa-solid fa-gift"></i>
+            </div>
 
-        <!-- ICON -->
+            <!-- DESKRIPSI -->
 
-        <div class="gift-icon">
+            <p class="gift-description">
+              Kehadiran dan doa restu Anda sudah menjadi hadiah terindah bagi
+              kami. Namun apabila ingin memberikan tanda kasih, dapat melalui
+              rekening berikut.
+            </p>
 
-            <i class="fa-solid fa-gift"></i>
+            <!-- BUTTON OPEN -->
 
-        </div>
+            <button id="giftToggle">🎁 Buka Amplop Digital</button>
 
-        <!-- DESKRIPSI -->
+            <!-- CONTENT REKENING -->
 
-        <p class="gift-description">
+            <div id="giftContent">
+              <!-- BCA -->
 
-            Kehadiran dan doa restu Anda sudah
-            menjadi hadiah terindah bagi kami.
-
-            Namun apabila ingin memberikan
-            tanda kasih, dapat melalui rekening
-            berikut.
-
-        </p>
-
-        <!-- BUTTON OPEN -->
-
-        <button id="giftToggle">
-
-            🎁 Buka Amplop Digital
-
-        </button>
-
-        <!-- CONTENT REKENING -->
-
-        <div id="giftContent">
-
-            <!-- BCA -->
-
-            <div class="bank-card">
-
+              <div class="bank-card">
                 <h3>BCA</h3>
 
                 <p>a.n Mila Putri</p>
 
-                <strong id="bcaNumber">
-                    1234567890
-                </strong>
+                <strong id="bcaNumber"> 1234567890 </strong>
 
-                <button
-                class="copy-btn"
-                data-copy="1234567890">
+                <button class="copy-btn" data-copy="1234567890">Copy</button>
+              </div>
 
-                    Copy
+              <!-- DANA -->
 
-                </button>
-
-            </div>
-
-            <!-- DANA -->
-
-            <div class="bank-card">
-
+              <div class="bank-card">
                 <h3>DANA</h3>
 
                 <p>a.n Rizky Saputra</p>
 
-                <strong id="danaNumber">
-                    081234567890
-                </strong>
+                <strong id="danaNumber"> 081234567890 </strong>
 
-                <button
-                class="copy-btn"
-                data-copy="081234567890">
+                <button class="copy-btn" data-copy="081234567890">Copy</button>
+              </div>
 
-                    Copy
+              <!-- KADO FISIK -->
 
-                </button>
-
-            </div>
-
-            <!-- KADO FISIK -->
-
-            <div class="bank-card">
-
+              <div class="bank-card">
                 <h3>Kirim Kado</h3>
 
-                <p>
-
-                    Jl. Mawar No.123
-                    Jakarta Selatan
-
-                </p>
-
+                <p>Jl. Mawar No.123 Jakarta Selatan</p>
+              </div>
             </div>
+          </div>
+        </section>
 
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      RSVP & UCAPAN
 =================================== -->
 
-<section id="rsvp">
+        <section id="rsvp">
+          <!-- JUDUL -->
 
-    <!-- JUDUL -->
+          <h2 class="rsvp-title">Bagikan Doa & Ucapan</h2>
 
-    <h2 class="rsvp-title">
-        Bagikan Doa & Ucapan
-    </h2>
+          <p class="rsvp-subtitle">
+            Berikan ucapan dan doa terbaik untuk kedua mempelai
+          </p>
 
-    <p class="rsvp-subtitle">
+          <!-- FORM -->
 
-        Berikan ucapan dan doa terbaik
-        untuk kedua mempelai
+          <div class="rsvp-form">
+            <!-- NAMA -->
 
-    </p>
+            <input type="text" id="guestInput" placeholder="Nama Anda" />
 
-    <!-- FORM -->
+            <!-- STATUS -->
 
-    <div class="rsvp-form">
+            <select id="attendanceInput">
+              <option value="">Apakah Anda akan hadir?</option>
 
-        <!-- NAMA -->
+              <option value="hadir">Ya, Saya akan hadir</option>
 
-        <input
-        type="text"
-        id="guestInput"
-        placeholder="Nama Anda">
+              <option value="tidak">Maaf, saya tidak bisa hadir</option>
 
-        <!-- STATUS -->
+              <option value="ragu">Belum yakin</option>
+            </select>
 
-        <select id="attendanceInput">
+            <!-- UCAPAN -->
 
-            <option value="">
-                Apakah Anda akan hadir?
-            </option>
+            <textarea
+              id="messageInput"
+              rows="5"
+              placeholder="Tulis ucapan Anda..."
+            ></textarea>
 
-            <option value="hadir">
+            <!-- BUTTON -->
 
-Ya, Saya akan hadir
+            <button id="sendWish">Kirim Ucapan</button>
+          </div>
 
-</option>
+          <!-- STATISTIK -->
 
-<option value="tidak">
+          <div class="attendance-box">
+            <h3>Daftar Kehadiran</h3>
 
-Maaf, saya tidak bisa hadir
-
-</option>
-
-<option value="ragu">
-
-Belum yakin
-
-</option>
-
-        </select>
-
-        <!-- UCAPAN -->
-
-        <textarea
-id="messageInput"
-rows="5"
-placeholder="Tulis ucapan Anda..."></textarea>
-
-        <!-- BUTTON -->
-
-        <button id="sendWish">
-
-            Kirim Ucapan
-
-        </button>
-
-    </div>
-
-    <!-- STATISTIK -->
-
-    <div class="attendance-box">
-
-        <h3>
-            Daftar Kehadiran
-        </h3>
-
-        <div class="attendance-stats">
-
-            <div>
-
+            <div class="attendance-stats">
+              <div>
                 <span id="hadirCount">0</span>
 
                 <small>Hadir</small>
+              </div>
 
-            </div>
-
-            <div>
-
+              <div>
                 <span id="tidakCount">0</span>
 
                 <small>Tidak Hadir</small>
+              </div>
 
-            </div>
-
-            <div>
-
+              <div>
                 <span id="raguCount">0</span>
 
                 <small>Belum Yakin</small>
-
+              </div>
             </div>
+          </div>
 
-        </div>
+          <!-- UCAPAN -->
 
-    </div>
+          <div class="wish-wrapper">
+            <h2 class="wish-title">Ucapan Tamu 💌</h2>
 
-    <!-- UCAPAN -->
+            <p id="wishCounter">Menampilkan 5 dari total 0 ucapan</p>
 
-    <div class="wish-wrapper">
+            <div id="wishList"></div>
 
-        <h2 class="wish-title">
-            Ucapan Tamu 💌
-        </h2>
+            <button id="toggleWish">Lihat Semua Ucapan</button>
+          </div>
+        </section>
 
-        <p id="wishCounter">
-
-            Menampilkan 5 dari total 0 ucapan
-
-        </p>
-
-        <div id="wishList"></div>
-
-        <button id="toggleWish">
-
-            Lihat Semua Ucapan
-
-        </button>
-
-    </div>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      THANK YOU SECTION
 =================================== -->
 
-<section id="thankyou">
+        <section id="thankyou">
+          <!-- JUDUL -->
 
-    <!-- JUDUL -->
+          <h2 class="thankyou-title">Thank You</h2>
 
-    <h2 class="thankyou-title">
-        Thank You
-    </h2>
+          <!-- UCAPAN TERIMA KASIH -->
 
-    <!-- UCAPAN TERIMA KASIH -->
+          <p class="thankyou-text">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+            Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+            Kehadiran serta doa yang diberikan menjadi hadiah terindah bagi
+            perjalanan baru kami.
+          </p>
 
-    <p class="thankyou-text">
+          <!-- DOA MEMPELAI -->
 
-        Merupakan suatu kehormatan dan kebahagiaan
-        bagi kami apabila Bapak/Ibu/Saudara/i
-        berkenan hadir dan memberikan doa restu.
+          <p class="thankyou-prayer">
+            Semoga Allah SWT senantiasa melimpahkan rahmat, keberkahan,
+            kebahagiaan, serta menjadikan keluarga kami keluarga yang sakinah,
+            mawaddah, wa rahmah.
+          </p>
 
-        Kehadiran serta doa yang diberikan menjadi
-        hadiah terindah bagi perjalanan baru kami.
+          <!-- NAMA MEMPELAI -->
 
-    </p>
+          <h3 class="thankyou-couple">Mila & Bastian</h3>
+        </section>
 
-    <!-- DOA MEMPELAI -->
-
-    <p class="thankyou-prayer">
-
-        Semoga Allah SWT senantiasa melimpahkan
-        rahmat, keberkahan, kebahagiaan,
-        serta menjadikan keluarga kami
-        keluarga yang sakinah, mawaddah,
-        wa rahmah.
-
-    </p>
-
-    <!-- NAMA MEMPELAI -->
-
-    <h3 class="thankyou-couple">
-
-        Mila & Bastian
-
-    </h3>
-
-</section>
-
-<!-- ===================================
+        <!-- ===================================
      COPYRIGHT
 =================================== -->
 
-<footer class="copyright">
+        <footer class="copyright">© 2026 Winky Art</footer>
+      </div>
+    </div>
 
-    © 2026 Winky Art
-
-</footer>
-
- </div>
-
-</div>
-
-<!-- ===================================
+    <!-- ===================================
      GALLERY POPUP
 =================================== -->
 
-<div id="galleryModal">
-
-    <button id="closeGallery">
-
+    <div id="galleryModal">
+      <button id="closeGallery">
         <i class="fa-solid fa-xmark"></i>
+      </button>
 
-    </button>
-
-    <button id="prevGallery">
-
+      <button id="prevGallery">
         <i class="fa-solid fa-chevron-left"></i>
+      </button>
 
-    </button>
+      <img id="galleryImage" />
 
-    <img id="galleryImage">
-
-    <button id="nextGallery">
-
+      <button id="nextGallery">
         <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
 
-    </button>
-
-</div>
-
-<!-- ===================================
+    <!-- ===================================
      LOCATION POPUP
 =================================== -->
 
-<div id="locationModal">
+    <div id="locationModal">
+      <!-- CLOSE -->
 
-    <!-- CLOSE -->
-
-    <button id="closeLocation">
-
+      <button id="closeLocation">
         <i class="fa-solid fa-xmark"></i>
+      </button>
 
-    </button>
+      <!-- CONTENT -->
 
-    <!-- CONTENT -->
-
-    <div class="location-content">
-
-        <h2 id="locationTitle">
-
-            Detail Lokasi
-
-        </h2>
+      <div class="location-content">
+        <h2 id="locationTitle">Detail Lokasi</h2>
 
         <!-- =========================
      GOOGLE MAPS EMBED
 ========================= -->
 
-<iframe
-id="locationMap"
-loading="lazy"
-allowfullscreen>
+        <iframe id="locationMap" loading="lazy" allowfullscreen> </iframe>
 
-</iframe>
-
-        <a
-        id="locationLink"
-        target="_blank">
-
-            Buka Google Maps
-
-        </a>
-
+        <a id="locationLink" target="_blank"> Buka Google Maps </a>
+      </div>
     </div>
 
-</div>
-
-<!-- ===================================
+    <!-- ===================================
      DELETE CONFIRM POPUP
 =================================== -->
 
-<div id="deleteModal">
+    <div id="deleteModal">
+      <div class="delete-box">
+        <h3>Hapus Ucapan?</h3>
 
-<div class="delete-box">
+        <p>Ucapan yang dihapus tidak bisa dikembalikan.</p>
 
-<h3>Hapus Ucapan?</h3>
+        <div class="delete-action">
+          <button id="cancelDelete">Batal</button>
 
-<p>
-Ucapan yang dihapus tidak bisa dikembalikan.
-</p>
+          <button id="confirmDeleteBtn">Hapus</button>
+        </div>
+      </div>
+    </div>
 
-<div class="delete-action">
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/autoscroll.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/couple-slider.js"></script>
+    <script src="js/event-status.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/location-popup.js"></script>
+    <script src="js/gift.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/guest.js"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<button id="cancelDelete">
-Batal
-</button>
-
-<button id="confirmDeleteBtn">
-Hapus
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<script src="js/main.js"></script>
-<script src="js/countdown.js"></script>
-<script src="js/music.js"></script>
-<script src="js/autoscroll.js"></script>
-<script src="js/navigation.js"></script>
-<script src="js/couple-slider.js"></script>
-<script src="js/event-status.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/location-popup.js"></script>
-<script src="js/gift.js"></script>
-<script src="js/rsvp.js"></script>
-<script src="js/guest.js"></script>
-<script src="js/scroll-animation.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-
-AOS.init();
-
-</script>
-
-
-
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
