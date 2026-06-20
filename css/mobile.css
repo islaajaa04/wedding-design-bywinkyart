@@ -339,7 +339,9 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 46px;
+    font-size: 56px;
+
+    line-height: 1;
   }
 
   .hero-subtitle {
@@ -375,7 +377,9 @@
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 46px;
+
+    line-height: 1;
 
     margin-bottom: 20px;
   }
