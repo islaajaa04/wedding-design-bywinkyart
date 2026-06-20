@@ -339,7 +339,7 @@
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 60px;
+    font-size: 46px;
   }
 
   .hero-subtitle {
@@ -365,7 +365,7 @@
 
 @media (max-width: 768px) {
   .hero-overlay {
-    padding: 60px 25px 40px;
+    padding: 30px 25px 40px;
   }
 
   .hero-subtitle {
@@ -375,7 +375,7 @@
   }
 
   .hero-title {
-    font-size: 70px;
+    font-size: 52px;
 
     line-height: 1.1;
 
