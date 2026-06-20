@@ -38,10 +38,10 @@ autoBtn.addEventListener(
 
             scrollContent.scrollBy(
             0,
-            1
+            4
             );
 
-        },20);
+        },15);
 
     }else{
 

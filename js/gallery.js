@@ -110,3 +110,21 @@ modalImg.src=
 images[currentIndex].src;
 
 });
+
+/* ==========================
+   CLOSE WHEN CLICK BACKGROUND
+========================== */
+
+modal.addEventListener(
+'click',
+(e)=>{
+
+if(e.target === modal){
+
+modal.classList.remove(
+'show'
+);
+
+}
+
+});

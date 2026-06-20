@@ -17,6 +17,26 @@ document.getElementById(
 'messageInput'
 );
 
+/* ==========================
+   FIX TEXTAREA CURSOR
+========================== */
+
+messageInput.value='';
+
+messageInput.addEventListener(
+'focus',
+()=>{
+
+if(
+messageInput.value.trim()===''
+){
+
+messageInput.value='';
+
+}
+
+});
+
 const sendWish =
 document.getElementById(
 'sendWish'
