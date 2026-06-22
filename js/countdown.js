@@ -1,42 +1,20 @@
-const target =
-new Date(
-"December 29, 2026 09:00:00"
-);
+const target = new Date("Mei 21, 2027 10:00:00");
 
-setInterval(()=>{
+setInterval(() => {
+  const now = new Date();
 
-const now = new Date();
+  const diff = target - now;
 
-const diff =
-target - now;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-const days =
-Math.floor(diff/(1000*60*60*24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-const hours =
-Math.floor(
-(diff%(1000*60*60*24))
-/
-(1000*60*60)
-);
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-const minutes =
-Math.floor(
-(diff%(1000*60*60))
-/
-(1000*60)
-);
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-const seconds =
-Math.floor(
-(diff%(1000*60))
-/
-1000
-);
-
-document.getElementById("days").innerHTML=days;
-document.getElementById("hours").innerHTML=hours;
-document.getElementById("minutes").innerHTML=minutes;
-document.getElementById("seconds").innerHTML=seconds;
-
-},1000);
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+}, 1000);
