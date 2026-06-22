@@ -1,9 +1,13 @@
-const target = new Date("Mei 21, 2027 10:00:00");
+const target = new Date("2027-05-21T09:00:00");
 
 setInterval(() => {
   const now = new Date();
 
-  const diff = target - now;
+  let diff = target - now;
+
+  if (diff <= 0) {
+    diff = 0;
+  }
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
@@ -14,7 +18,10 @@ setInterval(() => {
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   document.getElementById("days").innerHTML = days;
+
   document.getElementById("hours").innerHTML = hours;
+
   document.getElementById("minutes").innerHTML = minutes;
+
   document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
